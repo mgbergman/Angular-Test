@@ -1,0 +1,44 @@
+<app-menu></app-menu>
+<table *ngIf="request" class="table table-sm">
+    <tr>
+        <th>Id</th>
+        <td>
+            <input [(ngModel)]="request.id" disabled type="text" size="10">
+        </td>
+    </tr>
+    <tr>
+        <th>User</th>
+        <td>
+            <input [(ngModel)]="request.user.userName" type="text" size="10">
+        </td>
+    </tr>
+    <tr>
+        <th>Description</th>
+        <td>
+            <input [(ngModel)]="request.description" type="text" size="10">
+        </td>
+    </tr>
+    <tr>
+        <th>Justification</th>
+        <td> 
+            <input [(ngModel)]="request.justification" type="text" size="10">
+        </td>
+    </tr>
+    <tr>
+        <th>Date Needed</th>
+        <td>
+            <input [(ngModel)]="request.dateNeeded" type="text" size="10">
+        </td>
+    </tr>
+    <tr>
+        <th>Delivery Mode</th>
+        <td>
+            <input [(ngModel)]="request.deliveryMode" type="text" size="10">
+        </td>
+    </tr>
+    
+    <tr>
+        <td colspan="2">
+            <button (click)="save()" class= "btn btn-primary">Save</button>
+        </td>
+    </tr>

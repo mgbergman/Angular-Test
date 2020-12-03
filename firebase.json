@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/real-final-capstone-master/src",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

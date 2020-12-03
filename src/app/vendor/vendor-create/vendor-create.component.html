@@ -1,0 +1,60 @@
+<app-menu></app-menu>
+<tr>
+    <td>Id:</td>
+    <td>
+        <input [(ngModel)]="vendor.id" type="text" size="10" disabled>
+    </td>
+</tr>
+<tr>
+    <th>Code</th>
+    <td>
+        <input [(ngModel)]="vendor.code" type="text" size="20">
+    </td>
+</tr>
+    <td>Name:</td>
+    <td>
+        <input [(ngModel)]="vendor.name" type="text" size="10" >
+    </td>
+    <tr>
+        <td>Address:</td>
+        <td>
+            <input [(ngModel)]="vendor.address" type="text" size="20">
+        </td>
+    </tr>
+    <tr>
+        <th>City</th>
+        <td>
+            <input [(ngModel)]="vendor.city" type="text" size="30">
+        </td>
+    </tr>
+    <tr>
+        <th>State</th>
+        <td>
+            <input [(ngModel)]="vendor.state" type="text" size="2">
+        </td>
+    </tr>
+    <tr>
+        <th>Zip Code</th>
+        <td>
+            <input [(ngModel)]="vendor.zip" type="text" size="10">
+        </td>
+    </tr>
+    <tr>
+        <th>Phone Number</th>
+        <td>
+            <input [(ngModel)]="vendor.phoneNumber" type="text" size="20">
+        </td>
+    </tr>
+    <tr>
+        <th>Email</th>
+        <td>
+            <input [(ngModel)]="vendor.email" type="text" size="20">
+        </td>
+    </tr>
+    
+
+    <tr>
+        <td colspan="2">
+            <button (click)="save()" class= "btn btn-primary">Save</button>
+        </td>
+    </tr>

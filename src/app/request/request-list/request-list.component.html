@@ -1,0 +1,35 @@
+<app-menu></app-menu>
+<div class="h3">Request List</div>
+<a href="/request/create">Create</a> |
+<table class="table table-sm">
+    <tr>
+    <th>Id</th>
+    <th>User</th>
+    <th>Description</th>
+    <th>Justification</th>
+    <th>Date Needed</th>
+    <th>Delivery Mode</th>
+    <th>Status</th>
+    <th>Total</th>
+    <th>Submitted Date</th>
+    <th>Reason for Rejection</th>
+    </tr>
+
+    <tr *ngFor="let request of requests">
+        <td>{{ request.id}}</td>
+        <td>{{ request.user.userName}}</td>
+        <td>{{ request.description}}</td>
+        <td>{{ request.justification}}</td>
+        <td>{{ request.dateNeeded}}</td>
+        <td>{{ request.deliveryMode}}</td>
+        <td>{{ request.status}}</td>
+        <td>{{ request.total}}</td>
+        <td>{{ request.submittedDate}}</td>
+        <td>{{ request.reasonForRejection}}</td>
+        <td>
+            <a routerLink="/request/detail/{{request.id}}">Detail Request</a> |
+            <a routerLink="/request/edit/{{request.id}}">Edit Request</a> |
+            <a routerLink="/request/lines/{{request.id}}">Line Itens</a>
+        </td>
+  
+        </tr>

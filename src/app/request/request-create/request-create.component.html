@@ -1,0 +1,36 @@
+<app-menu></app-menu>
+<div><span class="h3">New Request</span></div>
+
+<tr>
+    <th>ID</th>
+    <td><input [(ngModel)]="request.id" type="text" disabled></td>
+</tr>
+<td>User Name:</td>
+    <td>
+        <select [(ngModel)]="request.user">
+        <option *ngFor="let user of users" [ngValue]=user>{{user.userName}}</option>
+        </select> 
+    </td>
+
+<tr>
+    <th>Description</th>
+    <td><input [(ngModel)]="request.description" type="text"></td>
+</tr>
+<tr>
+    <th>Justification</th>
+    <td><input [(ngModel)]="request.justification" type="text"></td>
+</tr>
+<tr>
+    <th>Delivery Mode</th>
+    <td><input [(ngModel)]="request.deliveryMode" type="text"></td>
+</tr>
+<tr>
+    <th>Date Needed (YYYY/MM/DD)  </th>
+    <td><input [(ngModel)]="request.dateNeeded" type="text"></td>
+</tr>
+
+<tr>
+    <td colspan="2">
+        <button (click)="save()" class= "btn btn-primary">Save</button>
+    </td>
+</tr>

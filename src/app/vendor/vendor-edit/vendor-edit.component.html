@@ -1,0 +1,69 @@
+<app-menu></app-menu>
+<table *ngIf="vendor" class="table table-sm">
+    <tr>
+    <th>Id</th>
+     <td>
+        <input [(ngModel)]="vendor.id" disabled type="text" size="10">
+    </td>
+    
+    <tr>
+    <th>Code</th>
+    <td>
+    <input [(ngModel)]="vendor.code" type="text" size="10">
+    </td>
+    </tr>
+    
+    <tr>
+    <th>Name</th>
+    <td>
+    <input [(ngModel)]="vendor.name" type="text" size="10">
+    </td>
+    </tr>
+    
+    <tr>
+    <th>Address</th>
+    <td>
+    <input [(ngModel)]="vendor.address" type="text" size="10">
+    </td>
+    </tr>
+    
+    <tr>
+    <th>City</th>
+    <td>
+    <input [(ngModel)]="vendor.city" type="text" size="10">
+    </td>
+    </tr>
+    
+    <tr>
+    <th>State</th>
+    <td>
+    <input [(ngModel)]="vendor.state" type="text" size="10">
+    </td>
+    </tr>
+    
+    <tr>
+    <th>Zip</th>
+    <td>
+    <input [(ngModel)]="vendor.zip" type="text" size="10">
+    </td>
+    </tr>
+    
+    <tr>
+    <th>Phone Number</th>
+    <td>
+    <input [(ngModel)]="vendor.phoneNumber" type="text" size="10">
+    </td>
+    </tr>
+    
+    <tr>
+    <th>Email</th>
+    <td>
+    <input [(ngModel)]="vendor.email" type="text" size="10">
+    </td>
+    </tr>
+    
+    <tr>
+        <td colspan="2">
+            <button (click)="save()" class= "btn btn-primary">Save</button>
+        </td>
+    </tr>
